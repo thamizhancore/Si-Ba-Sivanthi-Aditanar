@@ -3,116 +3,397 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>சி.பா. சிவந்தி ஆதித்தனார் உயர்நிலைப் பள்ளி</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Noto Sans Tamil',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px;
+text-align:center;
+background:
+linear-gradient(
+180deg,
+#0f172a,
+#1e293b,
+#2563eb
+);
+}
+
+.logo{
+width:130px;
+height:130px;
+border-radius:50%;
+background:white;
+padding:10px;
+box-shadow:0 0 40px rgba(255,255,255,.15);
+}
+
+.school{
+font-size:2rem;
+font-weight:800;
+margin-top:25px;
+line-height:1.4;
+}
+
+.motto{
+margin-top:15px;
+font-size:1.2rem;
+color:#f59e0b;
+font-weight:700;
+}
+
+.desc{
+margin-top:15px;
+opacity:.9;
+max-width:320px;
+line-height:1.7;
+}
+
+.button{
+margin-top:25px;
+background:white;
+color:#0f172a;
+padding:14px 28px;
+border-radius:999px;
+text-decoration:none;
+font-weight:700;
+}
+
+/* SECTION */
+
+.section{
+padding:70px 20px;
+}
+
+.title{
+font-size:1.8rem;
+font-weight:800;
+margin-bottom:25px;
+text-align:center;
+}
+
+/* CARDS */
+
+.cards{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.card{
+background:#1e293b;
+border:1px solid rgba(255,255,255,.08);
+padding:25px;
+border-radius:22px;
+text-align:center;
+}
+
+.card h2{
+font-size:2rem;
+color:#f59e0b;
+margin-bottom:10px;
+}
+
+/* ABOUT */
+
+.about{
+background:#111827;
+border-radius:25px;
+padding:25px;
+line-height:1.9;
+}
+
+/* ACHIEVEMENT */
+
+.achievement{
+text-align:center;
+padding:40px 20px;
+border-radius:25px;
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#1d4ed8
+);
+}
+
+.achievement h1{
+font-size:4rem;
+}
+
+.achievement p{
+margin-top:10px;
+}
+
+/* ANNUAL DAY */
+
+.event{
+background:#1e293b;
+padding:20px;
+border-radius:20px;
+margin-bottom:15px;
+}
+
+.event h3{
+margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.box{
+height:120px;
+border-radius:20px;
+background:#1e293b;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:10px;
+}
+
+/* CONTACT */
+
+.contact{
+background:#111827;
+padding:25px;
+border-radius:25px;
+text-align:center;
+}
+
+.map-btn{
+display:inline-block;
+margin-top:15px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+padding:12px 22px;
+border-radius:999px;
+}
+
+/* FOOTER */
+
+footer{
+padding:30px;
+text-align:center;
+opacity:.7;
+font-size:.9rem;
+}
+
+@media(min-width:768px){
+
+.cards{
+flex-direction:row;
+}
+
+.card{
+flex:1;
+}
+
+.gallery{
+grid-template-columns:repeat(4,1fr);
+}
+
+.school{
+font-size:3rem;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <div class="logo-area">
-            <img src="assets/logo.png" alt="School Logo">
-            <span>சி.பா. சிவந்தி ஆதித்தனார் உயர்நிலைப் பள்ளி</span>
-        </div>
-
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#academics">Academics</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
 <section class="hero">
-    <div class="overlay">
-        <img src="assets/logo.png" class="hero-logo">
 
-        <h1>சி.பா. சிவந்தி ஆதித்தனார் உயர்நிலைப் பள்ளி</h1>
+<img src="assets/logo.png" class="logo">
 
-        <p class="motto">"பணிவே கல்வி"</p>
+<h1 class="school">
+சி.பா. சிவந்தி ஆதித்தனார்<br>
+உயர்நிலைப் பள்ளி
+</h1>
 
-        <p class="location">வேப்பங்காடு - 628210</p>
+<p class="motto">
+"பணிவே கல்வி"
+</p>
 
-        <div class="stats">
-            <div class="card">
-                <h2>100%</h2>
-                <p>SSLC Pass Result</p>
-            </div>
+<p class="desc">
+Providing quality education, discipline,
+and academic excellence for students.
+</p>
 
-            <div class="card">
-                <h2>VI-X</h2>
-                <p>Classes Offered</p>
-            </div>
+<a href="#about" class="button">
+Explore
+</a>
 
-            <div class="card">
-                <h2>Annual Day</h2>
-                <p>Cultural Excellence</p>
-            </div>
-        </div>
-    </div>
 </section>
 
-<section id="about">
-    <h2>About School</h2>
+<section class="section">
 
-    <p>
-        S.I.B.A. Sivanthi Adithanar Higher Secondary School
-        is dedicated to providing quality education,
-        discipline and character development for students.
-    </p>
+<h2 class="title">
+School Highlights
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>100%</h2>
+<p>SSLC Results</p>
+</div>
+
+<div class="card">
+<h2>VI-X</h2>
+<p>Classes Offered</p>
+</div>
+
+<div class="card">
+<h2>★</h2>
+<p>Quality Education</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="academics">
-    <h2>Academics</h2>
+<section id="about" class="section">
 
-    <div class="grid">
-        <div class="box">Class VI</div>
-        <div class="box">Class VII</div>
-        <div class="box">Class VIII</div>
-        <div class="box">Class IX</div>
-        <div class="box">Class X</div>
-    </div>
+<h2 class="title">
+About School
+</h2>
+
+<div class="about">
+
+This is a demonstration website for
+S.I.B.A. Sivanthi Adithanar Higher
+Secondary School.
+
+Official information, photographs,
+and additional details will be added
+after approval.
+
+</div>
+
 </section>
 
-<section id="achievements">
-    <h2>Academic Excellence</h2>
+<section class="section">
 
-    <div class="result-box">
-        <h1>100%</h1>
-        <p>Consistent SSLC Pass Percentage</p>
-    </div>
+<h2 class="title">
+Academic Excellence
+</h2>
+
+<div class="achievement">
+
+<h1>100%</h1>
+
+<p>
+Consistent SSLC Pass Results
+</p>
+
+</div>
+
 </section>
 
-<section id="gallery">
-    <h2>Gallery</h2>
+<section class="section">
 
-    <div class="gallery">
-        <img src="assets/school.jpg">
-        <img src="assets/school.jpg">
-        <img src="assets/school.jpg">
-    </div>
+<h2 class="title">
+Annual Day
+</h2>
+
+<div class="event">
+<h3>🎭 Cultural Programs</h3>
+<p>Student performances and celebrations.</p>
+</div>
+
+<div class="event">
+<h3>🎤 Stage Activities</h3>
+<p>Opportunities to showcase talent.</p>
+</div>
+
+<div class="event">
+<h3>🎓 Student Participation</h3>
+<p>Encouraging confidence and creativity.</p>
+</div>
+
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
+<section class="section">
 
-    <p>வேப்பங்காடு - 628210</p>
+<h2 class="title">
+Gallery
+</h2>
 
-    <a class="btn"
-       href="https://maps.app.goo.gl/KKYgoyeftPpLhpYu6"
-       target="_blank">
-       Open in Google Maps
-    </a>
+<div class="gallery">
+
+<div class="box">Campus Photos</div>
+<div class="box">Annual Day</div>
+<div class="box">Activities</div>
+<div class="box">Coming Soon</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">
+Contact
+</h2>
+
+<div class="contact">
+
+<p>
+📍 வேப்பங்காடு - 628210
+</p>
+
+<a
+class="map-btn"
+target="_blank"
+href="https://maps.app.goo.gl/KKYgoyeftPpLhpYu6">
+Open Maps
+</a>
+
+</div>
+
 </section>
 
 <footer>
-    © 2026 S.I.B.A. Sivanthi Adithanar Higher Secondary School
+
+© 2026 SI.BA. Sivanthi Adithanar Higher Secondary School
+
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
